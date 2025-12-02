@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tic Tac Toe </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" role="application" aria-label="Tic Tac Toe game">
+    <aside class="panel" aria-hidden="false">
+      <header class="head">
+        <div class="brand">
+          <div class="logo">TT</div>
+          <h1>Tic Tac Toe</h1>
+        </div>
+        <div class="meta">
+          <div class="made-by">by Nitin (jd) Mali</div>
+          <button id="themeBtn" class="btn small">Toggle Theme</button>
+        </div>
+      </header>
+
+      <section class="inputs">
+        <label>
+          <span class="label-text">Player X</span>
+          <input id="playerX" type="text" maxlength="18" placeholder="Name for X">
+        </label>
+        <label>
+          <span class="label-text">Player O</span>
+          <input id="playerO" type="text" maxlength="18" placeholder="Name for O">
+        </label>
+
+        <div class="row">
+          <button id="startBtn" class="btn primary">Start</button>
+          <button id="swapBtn" class="btn">Swap</button>
+        </div>
+
+        <div class="row small-gap">
+          <button id="aiToggle" class="btn">Play vs CPU</button>
+          <select id="aiLevel" class="select">
+            <option value="easy">CPU: Easy</option>
+            <option value="hard">CPU: Hard</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="scoreboard" aria-label="scoreboard">
+        <div class="score">
+          <div class="label">Player X</div>
+          <div class="value" id="scoreX">0</div>
+          <div class="name" id="nameX">X</div>
+        </div>
+        <div class="score">
+          <div class="label">Ties</div>
+          <div class="value" id="scoreT">0</div>
+          <div class="name muted">Draws</div>
+        </div>
+        <div class="score">
+          <div class="label">Player O</div>
+          <div class="value" id="scoreO">0</div>
+          <div class="name" id="nameO">O</div>
+        </div>
+
+        <div class="controls">
+          <button id="newRoundBtn" class="btn">New Round</button>
+          <button id="clearBtn" class="btn">Clear Board</button>
+          <button id="resetBtn" class="btn">Reset Scores</button>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <div class="muted small">Tip: Use keys r (new), c (clear), s (swap). Enter starts.</div>
+      </footer>
+    </aside>
+
+    <main class="board-wrap">
+      <div class="status">
+        <div class="turn">
+          <div class="avatar" id="turnAvatar">X</div>
+          <div>
+            <div class="who" id="turnName">Player X</div>
+            <div class="sub" id="turnSub">Your move</div>
+          </div>
+        </div>
+        <div id="gameState" class="muted" aria-live="polite">Ready</div>
+      </div>
+
+      <div class="board" id="board" role="grid" aria-label="tic tac toe board">
+        <!-- 9 cells -->
+        <div class="cell" data-index="0" role="button" aria-label="cell 1"></div>
+        <div class="cell" data-index="1" role="button" aria-label="cell 2"></div>
+        <div class="cell" data-index="2" role="button" aria-label="cell 3"></div>
+        <div class="cell" data-index="3" role="button" aria-label="cell 4"></div>
+        <div class="cell" data-index="4" role="button" aria-label="cell 5"></div>
+        <div class="cell" data-index="5" role="button" aria-label="cell 6"></div>
+        <div class="cell" data-index="6" role="button" aria-label="cell 7"></div>
+        <div class="cell" data-index="7" role="button" aria-label="cell 8"></div>
+        <div class="cell" data-index="8" role="button" aria-label="cell 9"></div>
+
+        <svg class="overlay" id="overlaySVG" viewBox="0 0 300 300" preserveAspectRatio="none">
+          <path id="winLine" d="" stroke="none" fill="none" opacity="0"></path>
+        </svg>
+      </div>
+
+      <div class="board-controls">
+        <div id="lastAction" class="muted">No moves yet</div>
+        <div>
+          <button id="hintBtn" class="btn small">Hint</button>
+          <button id="aiPlayBtn" class="btn small">CPU Move</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <canvas class="confetti" id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
