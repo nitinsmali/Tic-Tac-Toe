@@ -1,5 +1,4 @@
-# 🎮 Advanced Tic-Tac-Toe Game
-
+# 🎮Tic-Tac-Toe Game
 An interactive and feature-rich **Tic-Tac-Toe game** built using **HTML, CSS, and JavaScript**.  
 Play against a friend or challenge the CPU with different difficulty levels.
 
@@ -9,10 +8,7 @@ Play against a friend or challenge the CPU with different difficulty levels.
 ---
 
 ### 🏠 Main Game Interface
-![Game Interface](images/game-ui.png)
-
-> 📌 Upload your screenshot inside a folder named `images` in your repository  
-> Example path: `images/game-ui.png`
+![Game Interface](images/game-prev.png)
 
 ---
 
@@ -24,7 +20,6 @@ Play against a friend or challenge the CPU with different difficulty levels.
 - 🎯 Selectable CPU difficulty (Easy mode available)
 - 🔄 Swap starting player
 - 🆕 Start new round anytime
-
 ---
 
 ### 🧠 Smart Game Logic
@@ -34,7 +29,6 @@ Play against a friend or challenge the CPU with different difficulty levels.
 - 🟢 Highlights three-in-a-row
 - 💡 Hint button for move suggestion
 - 🤖 CPU Move button
-
 ---
 
 ### 📊 Scoreboard System
@@ -44,7 +38,6 @@ Play against a friend or challenge the CPU with different difficulty levels.
 - 🤝 Total draws (ties)
 - 🔄 Reset Scores button
 - 🧹 Clear Board option
-
 ---
 
 ### 🎨 UI & Experience
@@ -53,7 +46,6 @@ Play against a friend or challenge the CPU with different difficulty levels.
 - 📱 Fully responsive layout
 - 🎯 Clean and user-friendly interface
 - 🧩 Smooth game interactions
-
 ---
 
 ### ⌨️ Keyboard Shortcuts
@@ -64,7 +56,6 @@ Play against a friend or challenge the CPU with different difficulty levels.
 | `c` | Clear Board |
 | `s` | Swap Player |
 | `Enter` | Start Game |
-
 ---
 
 ## 🎮 How to Play
@@ -76,18 +67,12 @@ Play against a friend or challenge the CPU with different difficulty levels.
 5. Players take turns placing X and O.
 6. First to get **3 in a row** (horizontal, vertical, or diagonal) wins.
 7. Use control buttons to manage the game.
-
 ---
 
 ## 🛠️ Technologies Used
-
 - HTML5  
 - CSS3  
 - JavaScript (Vanilla JS)
-
----
-
-
 ---
 
 ## 💡 Future Improvements
@@ -97,12 +82,9 @@ Play against a friend or challenge the CPU with different difficulty levels.
 - 🌐 Online multiplayer mode  
 - 📊 Game statistics tracking  
 - 🏅 Match history feature  
-
 ---
-
 ## 👨‍💻 Author
 
-**Nitin Mali**
-
+## ***Nitin Mali(JD)***
 GitHub:  
 https://github.com/nitinsmali
